@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Font';
+    src: url('/style/UberMoveMedium.otf');
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::-webkit-input-placeholder {
+  color: #56585b;
+}
+
+::-moz-placeholder {
+  color: #56585b;
+}
+
+:-moz-placeholder {
+  color: #56585b;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Font';
+  margin: 0;
+  background-size: cover;
+  color: #0a0a0b;
+  overflow: hidden;
+}
+
+ul, nav{
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  font-size: large;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: color .5s ;
+}
+
+a:hover {
+  color: #ef3f5a;
+  opacity: 1;
+}
+
+.brand_name {
+  font-size: xx-large;
+  padding-left: 20px;
+
+}
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color:#ef3f5a;
+  margin: 0 0 1.5rem;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding-top: 20px; 
+}
+
+header nav ul {
+  display: flex;
+  padding-right: 100px;
+}
+
+header nav li{
+  margin: 0 15px;
+}
+
+header nav li:first-child{
+  margin-left: 0; 
+}
+
+header nav li:last-child{
+  margin-right: 0;  
+}
+
+.cover  {
+    height: 100vh;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.05)), to(rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+    padding: 20px 50px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+.container {
+    overflow: hidden;
+    padding-top: 5px;   
+    transition: opacity 1s;
+}
+
+.text_block {
+    width: 20%;
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+table {
+  margin: 100px auto;
+  width: 95%;
+  background-color: #ffffff;
+  opacity: 80%;
+  color: #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+th {
+  color: #ef3f5a;
+  position: sticky;
+  top: 0;
+}
+
+.search {
+    width: 40%;
+    position: absolute;
+    top: 230px;
+    left: 25px;
+    background-color: #ffffff;
+    opacity: 80%;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+
+form {
+    display: table;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns : repeat(1, 1fr);
+}
+
+form select {
+    width: 150px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form_row {
+    display: table-row;
+}
+
+form input[type="submit"] {
+  height: 30px;
+  background: #ef3f5a;
+  border: 1px solid #ef3f5a;
+  color: #fff;
+  padding: 0 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+  background: #d73851;
+  border: 1px solid #d73851;
+}
+
+form label {
+  padding-right: 20px;
+}
+
+form select {
+  text-align: center;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid #ef3f5a;
+  color: #ef3f5a;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+
+form select:hover {
+  color: #fff;
+  background: #ef3f5a;
+  border: 1px solid #ef3f5a;
+}
+
+form input[type="search"] {
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ef3f5a;
+  color: #ef3f5a;
+  padding: 0 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+
+form input[type="search"]:hover {
+  color: #fff;
+  background: #ef3f5a;
+  border: 1px solid #ef3f5a;
+}
